@@ -7,22 +7,31 @@ title: "Hello, world!"
 ---
 
 <header>
-  <h1>Hello, world!</h1>
+  <h1>Ben Prevor's Blog</h1>
   <img
-    alt="A woman sitting on a bench amongst trees at the end of a boardwalk leading to a pond with mountains in the background"
-    src="./images/robert-pearce-UwHN0jU_YqQ-unsplash-800w.jpg"
-    height="300"
+    alt="A portrait of Ben Prevor"
+    src="./images/ben-prevor-portrait.jpg"
+    height="200"
   />
 </header>
 <main>
   <section>
-    <h2>Blog Posts</h2>
+    <h2>About Me</h2>
+    <p>
+      I'm a Computer Science graduate student with a robust mix of professional
+      experience, academic learning, and personal projects. My technical
+      proficiency is rooted in functional programming, compiler engineering, and
+      artificial intelligence.
+    </p>
+  </section>
+  <section>
+    <h2>Recent Posts</h2>
     <ul>
       $for(posts)$
-        <li>
-          <div><a href=".$url$">$title$</a></div>
-          <small>$date$</small>
-        </li>
+      <li>
+        <a href=".$url$">$title$</a>
+        <small>$date$</small>
+      </li>
       $endfor$
     </ul>
   </section>
