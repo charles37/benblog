@@ -1,6 +1,6 @@
-# hakyll-nix-template
+# Benjamin Prevor's Blog
 
-[Hakyll](https://jaspervdj.be/hakyll/) + [Nix](https://nixos.org) template
+using [Hakyll](https://jaspervdj.be/hakyll/) + [Nix](https://nixos.org) template
 
 ## Quick tips
 
