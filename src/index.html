@@ -9,11 +9,7 @@ title: "ben blog homepage"
 
 <header>
   <div class="header-content">
-    <img
-      alt="A portrait of Ben Prevor"
-      src="./images/ben-prevor-portrait.jpg"
-      class="profile-image"
-    />
+    <img alt="A portrait of Ben Prevor" src="./images/ben-prevor-portrait.jpg" class="profile-image" />
     <h1>Ben Prevor's Blog</h1>
     <p class="tagline">
       Exploring Compiler Engineering, AI, and Functional Programming
@@ -30,45 +26,55 @@ title: "ben blog homepage"
       I have worked as a Software Engineer at BlockApps and have contributed to
       various projects in Haskell, Rust, and Nix. Enjoy my musings
     </p>
-  </section>
-  <section class="recent-posts">
-    <h2>Recent Posts</h2>
-    <ul>
-      $for(posts)$
-      <li>
-        <a href=".$url$">$title$</a>
-        <small>$date$</small>
-      </li>
-      $endfor$
-    </ul>
-  </section>
-  <section class="projects">
-    <h2>Projects</h2>
-    <article>
-      <h3>Nix-Recorder</h3>
-      <p>
-        A command-line utility built in Rust, leveraging the StructOpt library
-        for CLI operations. It dynamically manages Nix shell environments,
-        allowing users to add packages, save states, and eject config flakes.
-      </p>
-    </article>
-    <article>
-      <h3>WhichIsBetterAI</h3>
-      <p>
-        WhichIsBetterAI uses AI models to compare random concepts pulled from
-        Wikipedia and then adjusts their ELO scores based on the outcomes for AI
-        bias analysis. Built using Haskell and Python.
-      </p>
-    </article>
-    <article>
-      <h3>Personal NixOS Flake</h3>
-      <p>
-        Constructed and consistently updated a reproducible system configuration
-        using Nix Flakes, incorporating custom setups for home-manager, Neovim,
-        Alacritty, and various LSP configurations.
-      </p>
-    </article>
-  </section>
+    <section class="recent-posts">
+      <h2>Book Reviews</h2>
+      <ul>
+        $for(book_reviews)$
+        <li>
+          <a href=".$url$">$title$</a>
+          <small>$date$</small>
+        </li>
+        $endfor$
+      </ul>
+    </section>
+    <section class="recent-posts">
+      <h2>Recent Posts</h2>
+      <ul>
+        $for(posts)$
+        <li>
+          <a href=".$url$">$title$</a>
+          <small>$date$</small>
+        </li>
+        $endfor$
+      </ul>
+    </section>
+    <section class="projects">
+      <h2>Projects</h2>
+      <article>
+        <h3>Nix-Recorder</h3>
+        <p>
+          A command-line utility built in Rust, leveraging the StructOpt library
+          for CLI operations. It dynamically manages Nix shell environments,
+          allowing users to add packages, save states, and eject config flakes.
+        </p>
+      </article>
+      <article>
+        <h3>WhichIsBetterAI</h3>
+        <p>
+          WhichIsBetterAI uses AI models to compare random concepts pulled from
+          Wikipedia and then adjusts their ELO scores based on the outcomes for AI
+          bias analysis. Built using Haskell and Python.
+        </p>
+      </article>
+      <article>
+        <h3>Personal NixOS Flake</h3>
+        <p>
+          Constructed and consistently updated a reproducible system configuration
+          using Nix Flakes, incorporating custom setups for home-manager, Neovim,
+          Alacritty, and various LSP configurations.
+        </p>
+      </article>
+    </section>
 </main>
 
 <!--
