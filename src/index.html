@@ -3,28 +3,35 @@ desc: "This is me saying hello to the world"
 image: "./images/robert-pearce-UwHN0jU_YqQ-unsplash-800w.jpg"
 lang: "en"
 stylesheet: "default"
-title: "Hello, world!"
+year: "2024"
+title: "ben blog homepage"
 ---
 
 <header>
-  <h1>Ben Prevor's Blog</h1>
-  <img
-    alt="A portrait of Ben Prevor"
-    src="./images/ben-prevor-portrait.jpg"
-    height="200"
-  />
+  <div class="header-content">
+    <img
+      alt="A portrait of Ben Prevor"
+      src="./images/ben-prevor-portrait.jpg"
+      class="profile-image"
+    />
+    <h1>Ben Prevor's Blog</h1>
+    <p class="tagline">
+      Exploring Compiler Engineering, AI, and Functional Programming
+    </p>
+  </div>
 </header>
 <main>
-  <section>
+  <section class="about-me">
     <h2>About Me</h2>
     <p>
-      I'm a Computer Science graduate student with a robust mix of professional
-      experience, academic learning, and personal projects. My technical
-      proficiency is rooted in functional programming, compiler engineering, and
-      artificial intelligence.
+      I'm a Computer Science graduate student at New York University,
+      specializing in Compilers. My technical proficiency is rooted in
+      functional programming, compiler engineering, and artificial intelligence.
+      I have worked as a Software Engineer at BlockApps and have contributed to
+      various projects in Haskell, Rust, and Nix. Enjoy my musings
     </p>
   </section>
-  <section>
+  <section class="recent-posts">
     <h2>Recent Posts</h2>
     <ul>
       $for(posts)$
@@ -35,4 +42,56 @@ title: "Hello, world!"
       $endfor$
     </ul>
   </section>
+  <section class="projects">
+    <h2>Projects</h2>
+    <article>
+      <h3>Nix-Recorder</h3>
+      <p>
+        A command-line utility built in Rust, leveraging the StructOpt library
+        for CLI operations. It dynamically manages Nix shell environments,
+        allowing users to add packages, save states, and eject config flakes.
+      </p>
+    </article>
+    <article>
+      <h3>WhichIsBetterAI</h3>
+      <p>
+        WhichIsBetterAI uses AI models to compare random concepts pulled from
+        Wikipedia and then adjusts their ELO scores based on the outcomes for AI
+        bias analysis. Built using Haskell and Python.
+      </p>
+    </article>
+    <article>
+      <h3>Personal NixOS Flake</h3>
+      <p>
+        Constructed and consistently updated a reproducible system configuration
+        using Nix Flakes, incorporating custom setups for home-manager, Neovim,
+        Alacritty, and various LSP configurations.
+      </p>
+    </article>
+  </section>
 </main>
+
+<!--
+  <section class="recent-posts">
+    <h2>Recent Posts</h2>
+    <ul>
+      <li>
+        <a href="which-is-better-ai.html"
+          >Which Is Better AI - An Exploration into AI Bias Analysis</a
+        >
+        <small>March 15, 2024</small>
+      </li>
+      <li>
+        <a href="nix-recorder.html"
+          >Nix-Recorder: Managing Nix Shell Environments Efficiently</a
+        >
+        <small>February 10, 2024</small>
+      </li>
+      <li>
+        <a href="personal-nixos-flake.html"
+          >Building My Personal NixOS Flake Configuration</a
+        >
+        <small>January 5, 2024</small>
+      </li>
+    </ul>
+  </section>-->

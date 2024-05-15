@@ -7,6 +7,7 @@ keywords: "hello, announcement"
 lang: "en"
 title: "Hello, world!"
 updated: "2020-09-22T12:00:00Z"
+year: "2024"
 ---
 
 Hello, world! I am here!

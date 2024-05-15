@@ -7,6 +7,7 @@ keywords: "hola, anuncio"
 lang: "es"
 title: "¡Hola Mundo!"
 updated: "2020-09-23T12:00:00Z"
+year: "2024"
 ---
 
 ¡Hola Mundo! ¡Estoy aquí!
