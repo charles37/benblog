@@ -100,15 +100,6 @@ main = hakyllWith config $ do
         >>= saveSnapshot "content"
         >>= loadAndApplyTemplate "templates/default.html" ctx
  
-  --match "book_reviews/*" $ do
-  --  let ctx = constField "type" "book_review" <> postCtx
-  --  route $ metadataRoute titleRoute
-  --  compile $
-  --    pandocCompilerCustom
-  --      >>= loadAndApplyTemplate "templates/post.html" ctx
-  --      >>= saveSnapshot "content"
-  --      >>= loadAndApplyTemplate "templates/default.html" ctx
-
   match "index.html" $ do
     route idRoute
     compile $ do
