@@ -51,10 +51,15 @@ header {
     margin-bottom: 1rem;
 }
 
+.headline {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
 .tagline {
     font-style: italic;
     margin-bottom: 1rem;
-    color: var(--light-accent);
+    color: var(--accent-color);
 }
 
 main {
