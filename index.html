@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- <title>ben blog homepage</title>-->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="descrihttp://localhost:3000ption" content="This is me saying hello to the world" />
+     
+
+    <meta property="og:site_name" content="Ben Prevor's Blog" />
+    <meta property="og:title" content="ben blog homepage" />
+    <meta property="og:url" content="https://benprevor.com/index.html" />
+    <meta property="og:description" content="This is me saying hello to the world" />
+    
+    <meta property="og:image" content="https://benprevor.com./images/robert-pearce-UwHN0jU_YqQ-unsplash-800w.jpg" />
+     
+    <meta property="og:type" content="website" />
+     
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="https://benprevor.com./images/robert-pearce-UwHN0jU_YqQ-unsplash-800w.jpg" />
+    
+    <meta property="twitter:site" content="Ben Prevor's Blog" />
+    <meta property="twitter:title" content="ben blog homepage" />
+    <meta property="twitter:description" content="This is me saying hello to the world" />
+    
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="canonical" href="https://benprevor.com/index.html" />
+
+    <link
+      rel="alternate"
+      href="./atom.xml"
+      title="Ben Prevor's Blog Feed"
+      type="application/atom+xml"
+    />
+    <link
+      rel="alternate"
+      href="./rss.xml"
+      title="Ben Prevor's Blog Feed"
+      type="application/rss+xml"
+    />
+
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/code.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/default.css" />
+  </head>
+
+  <body>
+    <!-- <header>
+       <h1>ben blog homepage</h1>
+    </header>-->
+    <header>
+  <div class="header-content">
+    <img
+      alt="A portrait of Ben Prevor"
+      src="./images/ben-prevor-portrait.jpg"
+      class="profile-image"
+    />
+    <h1 class="headline">Ben Prevor's Blog</h1>
+    <p class="tagline">
+      Exploring Compiler Engineering, AI, and Functional Programming
+    </p>
+    <div class="icons-logos">
+      <a href="https://www.linkedin.com/in/benprevor/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/benjaminprevor">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/charles37">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="about-me">
+    <h2>About Me</h2>
+    <p>
+      I'm a Computer Science graduate student at New York University,
+      specializing in Compilers, and a graduate of University of Chicago with a
+      BS in Computer Science. My technical proficiency is rooted in functional
+      programming, compiler engineering, and artificial intelligence. I have
+      worked as a Software Engineer at BlockApps and have contributed to various
+      projects in Haskell, Rust, and Nix. Enjoy my musings.
+    </p>
+  </section>
+  <section class="recent-posts">
+    <h2>Recent Posts and Book Reviews</h2>
+    <ul>
+      
+      <li>
+        <a href="./learn-you-a-haskell-a-retrospective-on-my-first-six-years-of-programming.html">Learn You a Haskell: A Retrospective on My First Six Years of Programming</a>
+        <small>2024-05-14</small>
+      </li>
+      
+    </ul>
+  </section>
+  <section class="projects">
+    <h2>Projects</h2>
+    <article>
+      <h3>Nix-Recorder</h3>
+      <p>
+        A command-line utility built in Rust, leveraging the StructOpt library
+        for CLI operations. It dynamically manages Nix shell environments,
+        allowing users to add packages, save states, and eject config flakes.
+      </p>
+      <a href="github.com/charles37/nix-recorder">GitHub</a>
+    </article>
+    <article>
+      <h3>WhichIsBetterAI</h3>
+      <p>
+        WhichIsBetterAI uses AI models to compare random concepts pulled from
+        Wikipedia and then adjusts their ELO scores based on the outcomes for AI
+        bias analysis. Built using Haskell and Python.
+      </p>
+      <a href="https://github.com/charles37/WhichIsBetterAI">GitHub</a>
+    </article>
+    <article>
+      <h3>Personal NixOS Flake</h3>
+      <p>
+        Constructed and consistently updated a reproducible system configuration
+        using Nix Flakes, incorporating custom setups for home-manager, Neovim,
+        Alacritty, and various LSP configurations.
+      </p>
+      <a href="https://github.com/charles37/flake2">GitHub</a>
+    </article>
+  </section>
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Feel free to reach out to me at benprevor@gmail.com to chat about anything
+    </p>
+  </section>
+</main>
+
+    <footer>
+      &copy; 2024 Ben Prevor. All rights reserved. This site is powered by
+      <a href="https://github.com/charles37/benblog"
+        >Haskell and Nix via Hakyll</a
+      >.
+    </footer>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>

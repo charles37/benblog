@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- <title>Learn You a Haskell: A Retrospective on My First Six Years of Programming</title>-->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="descrihttp://localhost:3000ption" content="A review of Learn You a Haskell for Great Good" />
+    
+    <meta name="author" content="Benjamin Prevor" />
+     
+    <meta name="keywords" content="book review, haskell" />
+    
+
+    <meta property="og:site_name" content="Ben Prevor's Blog" />
+    <meta property="og:title" content="Learn You a Haskell: A Retrospective on My First Six Years of Programming" />
+    <meta property="og:url" content="https://benprevor.com/learn-you-a-haskell-a-retrospective-on-my-first-six-years-of-programming.html" />
+    <meta property="og:description" content="A review of Learn You a Haskell for Great Good" />
+    
+    <meta property="og:image" content="https://benprevor.com./images/learn_you_a_haskell.jpg" />
+     
+    <meta property="og:type" content="article" />
+     
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="https://benprevor.com./images/learn_you_a_haskell.jpg" />
+    
+    <meta property="twitter:site" content="Ben Prevor's Blog" />
+    <meta property="twitter:title" content="Learn You a Haskell: A Retrospective on My First Six Years of Programming" />
+    <meta property="twitter:description" content="A review of Learn You a Haskell for Great Good" />
+    
+    <meta property="twitter:creator" content="@BenjaminPrevor" />
+    
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="canonical" href="https://benprevor.com/learn-you-a-haskell-a-retrospective-on-my-first-six-years-of-programming.html" />
+
+    <link
+      rel="alternate"
+      href="./atom.xml"
+      title="Ben Prevor's Blog Feed"
+      type="application/atom+xml"
+    />
+    <link
+      rel="alternate"
+      href="./rss.xml"
+      title="Ben Prevor's Blog Feed"
+      type="application/rss+xml"
+    />
+
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/code.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/default.css" />
+  </head>
+
+  <body>
+    <!-- <header>
+       <h1>Learn You a Haskell: A Retrospective on My First Six Years of Programming</h1>
+    </header>-->
+    <article>
+  <header>
+    <h1 class="headline">Learn You a Haskell: A Retrospective on My First Six Years of Programming</h1>
+    <p class="tagline">How purity culture may have led me to a lack of purpose</p>
+    <p>By <a href="https://twitter.com/benjaminprevor">Benjamin Prevor</a></p>
+    <p>Published on <time datetime="2024-05-14">2024-05-14</time></p>
+  </header>
+  <section><h3 id="learn-you-a-haskell-for-great-good-a-beginners-guide-by-miran-lipovača">“Learn You a Haskell for Great Good! A Beginner’s Guide” by Miran Lipovača</h3>
+<div style="text-align:center">
+    <img
+      alt="Learn You a Haskell for Great Good by Miran Lipovaca"
+      src="./images/learn_you_a_haskell.jpg"
+      height="400"
+    />
+</div>
+<p>When I was 14, I went to a <a href="https://lilug.org/">Long Island Linux User Group</a> meeting with my father and brother. I guess I knew what Linux was, but my familiarity with programming as a practice was mostly just informed by things on Reddit and TV.</p>
+<p>I watched my brother give a lightning talk on the <a href="https://www.linux-netbook.com/lemote-yeeloong-8089/">Lemote YeeLong</a>, the first laptop that, from the BIOS to the hardware drivers, contained solely <a href="https://www.gnu.org/philosophy/free-sw.en.html">free as in freedom software</a>. My brother’s unconventional choices, like opting for the <a href="https://thenophone.com/">NoPhone</a> instead of a cell phone, reinforced the notion of “purity” in computing and abstraction from practicalities. I listened to many other talks that day, and by the end of the user group meeting, I got my first sense of why my brother felt so much joy from his deviation from normal consumer choices. There are respects in which Linux provides greater utility than alternative options, but this enhanced utility was not why these people were gathered; they were gathered because they felt that the way they computed was more ethical, more pure, more how God intended.</p>
+<p>Inspired by this experience, in the summer of 2017, before I would enter my first <a href="https://en.wikipedia.org/wiki/Academic_quarter_(year_division)">quarter</a> of studies at UChicago, I decided I would finally learn a little programming to better connect with my brother, who was at the time studying computer science as well. The introductory course <a href="http://cmsc-16100.cs.uchicago.edu/2021-autumn/">CS161: Introduction to Programming I</a>, taught by <a href="https://people.cs.uchicago.edu/~rchugh/">Ravi Chugh</a>, had a unique philosophy on how one should be introduced to higher-level study in computer science.</p>
+<blockquote>
+<p>This is an introductory honors course in computer science, not just computer programming. We will learn through the vehicle of a specific programming language—Haskell—a pure, lazy, functional programming language. This quarter has a distinct “high-brow” feel to it, because Haskell obtains power through generality, and generality through abstraction.</p>
+</blockquote>
+<p>I knew that compared to the average UChicagoan in this class, I would have significantly less experience with programming. So I looked at the recommended texts and saw: <h1>Learn You a Haskell for Great Good by Miran Lipovaca</h1></p>
+<p>I found the book mildly charming. Miran has a fun writing style; his musings and funny <a href="https://haskell.foundation/podcast/">interludes</a> kept the book readable, and thus I learned the basics of Haskell.</p>
+<p>I didn’t know this at the time, but what in hindsight makes LYaHfGG! such a remarkable book, is two main factors:</p>
+<blockquote>
+<ol>
+<li>The book is written for beginners with no experience in programming at all.</li>
+<li>The book is focused on topics you need to know to enter the “Haskell Community,” not necessarily the topics you’d need to know to program useful things.</li>
+</ol>
+</blockquote>
+<p>As an aside, years later while working as a full-time Haskell developer at <a href="https://blockapps.net/">BlockApps</a>, I would encounter a funny anecdote written by a former coworker about LYaHfGG!. He wrote, “Unless you wish to unlearn the previous way you did things, I do not recommend learning via the great good.”</p>
+<p>When I got to school in the upcoming fall, I felt like I had a comparative advantage in the class. To my fellow classmates, learning Haskell was an affectation, like entering a different dimension of programming which they had previously learned, but to me, it was just learning what was in the book and on the slides.</p>
+<p>I was quite insecure and struggling with <a href="https://en.wikipedia.org/wiki/Impostor_syndrome">imposter syndrome</a> in my first year at UChicago. Many of my classmates were simply far more knowledgeable than me in many of the domains that I was particularly interested in and at the time I didn’t understand that I just needed to change my study habits. I struggled mightily in many classes during my first year, which made my relative advantage in what was supposed to be one of the hardest first-year classes at UChicago stand out even more. I interpreted this as an indication that functional programming was an area where I had a particular talent.</p>
+<p>I think this early success heavily hindered my ability to learn and adapt in future classes. It felt as if I was striving for an ideal that was, in itself, an end. I was not just learning to code; I was aligning myself with a philosophy that simply did not have the relevance to the real world that so many students already knew.</p>
+<p>When we learned the basic structure of Haskell, which involved learning the building blocks of Haskell (Functors, Applicatives, and Monads), I felt a sense of achievement:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> <span class="dt">Functor</span> f <span class="kw">where</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    fmap ::</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> f a <span class="ot">-&gt;</span> f b</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> (<span class="dt">Functor</span> f) <span class="ot">=&gt;</span> <span class="dt">Applicative</span> f <span class="kw">where</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ot">    pure  ::</span> a <span class="ot">-&gt;</span> f a</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ot">    (&lt;*&gt;) ::</span> f (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> f a <span class="ot">-&gt;</span> f b</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> <span class="dt">Monad</span> m <span class="kw">where</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ot">  (&gt;&gt;=)  ::</span> m a <span class="ot">-&gt;</span> (  a <span class="ot">-&gt;</span> m b) <span class="ot">-&gt;</span> m b</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ot">  (&gt;&gt;)   ::</span> m a <span class="ot">-&gt;</span>  m b         <span class="ot">-&gt;</span> m b</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ot">  return ::</span>   a                 <span class="ot">-&gt;</span> m a</span></code></pre></div>
+<p>However, this sense of mastery was challenged when I took a course on web development. As I struggled to apply my Haskell knowledge to the practical tasks of building web applications, I began to realize that my early specialization in Haskell’s abstract concepts might have constrained my growth as a programmer.</p>
+<p>Looking back, I see how in later classes and projects, I sometimes tried to shoehorn obtuse ways to accomplish tasks. I would abandon practical considerations and refuse to learn methods that didn’t pass the purity test. In my graduate studies, I would suffer through trying to get Python exercises to work on my NixOS system running an AMD GPU, even when the whole class had no trouble setting up their environments on a Mac or Ubuntu machine.</p>
+<p>I had internalized that programming languages are tools, and different ones suit different purposes, but I wanted to shoehorn my existing knowledge into every domain. While principles like functional purity have their place, pragmatism and flexibility are essential.</p>
+<p>I’m grateful for the strong foundation and lasting interest in the field of computer science that “Learn You a Haskell” gave me, but I’ve also accepted that it limited my horizons. The key for the future is to keep learning, try to keep an open mind, and strive for that elusive balance between learning that makes me comfortable and learning that makes me uncomfortable. That, perhaps, is the true path to “great good” in this field.</p>
+<p>This is a work in progress</p></section>
+</article>
+
+    <footer>
+      &copy; 2024 Ben Prevor. All rights reserved. This site is powered by
+      <a href="https://github.com/charles37/benblog"
+        >Haskell and Nix via Hakyll</a
+      >.
+    </footer>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
