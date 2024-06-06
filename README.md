@@ -2,6 +2,8 @@
 
 using [Hakyll](https://jaspervdj.be/hakyll/) + [Nix](https://nixos.org) template
 
+Always a WIP
+
 ## Quick tips
 
 * Read the tutorial to get started! https://robertwpearce.com/the-hakyll-nix-template-tutorial.html
